@@ -1,0 +1,80 @@
+/*
+        !START USING SOME TYPE OF CSS ORGANIZATION METHOD LIKE BEM
+        !https://www.youtube.com/watch?v=SBB1YtwODT0&t=654s
+        !https://coggle.it/diagram/XfeRbWj7xy3dsEX8/t/web-development-in-2020
+        
+        Table Of Contents
+        ------------------
+      1. LAYOUTS
+        1.1 General
+        1.2 Header
+      2. COMPONENTS
+      3. PAGES
+*/
+
+:root {
+  /*COLORS*/
+  --mainColor: #3d3d3d;
+  --secondaryColor: #dedede;
+  --tertiaryColor: red;
+
+  /*TEXT*/
+  --mainText: #000000;
+
+  /*BORDER*/
+  --b: solid 2px #00000088;
+  --b_radius: 5px;
+}
+/**------------------------------------------
+**            1. lAYOUTS
+**------------------------------------------*/
+/******************1.1 General******************/
+* {
+  margin: 0;
+  padding: 0;
+
+  color: var(--mainText);
+}
+
+body {
+  background-color: var(--mainColor);
+
+  font-family: "Bebas Neue", cursive;
+  font-size: xx-large;
+}
+main {
+  background-color: white;
+  border: var(--b);
+  border-radius: var(--b_radius);
+  margin: 30px auto;
+
+  width: 50vw;
+}
+a {
+  text-decoration: none;
+}
+/*****************1.2 HEADER********************/
+header {
+  background: var(--secondaryColor);
+  li {
+    display: inline-block;
+  }
+  a {
+    margin: 20px;
+  }
+  a:hover {
+    color: var(--tertiaryColor);
+  }
+}
+/**------------------------------------------
+**            2. COMPONENTS
+**------------------------------------------*/
+/*****************2.1 Board********************/
+quadrant {
+  display: flex;
+  border: var(--b);
+  padding: 50px;
+}
+/**------------------------------------------
+**            3. PAGES
+**------------------------------------------*/
