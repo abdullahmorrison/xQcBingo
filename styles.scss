@@ -10,6 +10,7 @@
         1.2 Header
       2. COMPONENTS
       3. PAGES
+        3.1 Board
 */
 
 :root {
@@ -42,14 +43,6 @@ body {
   font-family: "Bebas Neue", cursive;
   font-size: xx-large;
 }
-main {
-  background-color: white;
-  border: var(--b);
-  border-radius: var(--b_radius);
-  margin: 30px auto;
-
-  width: 50vw;
-}
 a {
   text-decoration: none;
 }
@@ -69,12 +62,22 @@ header {
 /**------------------------------------------
 **            2. COMPONENTS
 **------------------------------------------*/
-/*****************2.1 Board********************/
-quadrant {
-  display: flex;
-  border: var(--b);
-  padding: 50px;
-}
+
 /**------------------------------------------
 **            3. PAGES
 **------------------------------------------*/
+/*****************3.1 Board********************/
+.board{
+  background-color: white;
+  border: var(--b);
+  border-radius: var(--b_radius);
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin: 30px auto;
+  width: 50vw;
+}
+.quadrant {
+  border: var(--b);
+  padding: 50px;
+  text-align: center;
+}

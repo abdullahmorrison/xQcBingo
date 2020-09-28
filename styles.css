@@ -10,6 +10,7 @@
         1.2 Header
       2. COMPONENTS
       3. PAGES
+        3.1 Board
 */
 :root {
   /*COLORS*/
@@ -39,14 +40,6 @@ body {
   font-size: xx-large;
 }
 
-main {
-  background-color: white;
-  border: var(--b);
-  border-radius: var(--b_radius);
-  margin: 30px auto;
-  width: 50vw;
-}
-
 a {
   text-decoration: none;
 }
@@ -71,16 +64,25 @@ header a:hover {
 /**------------------------------------------
 **            2. COMPONENTS
 **------------------------------------------*/
-/*****************2.1 Board********************/
-quadrant {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: var(--b);
-  padding: 50px;
-}
-
 /**------------------------------------------
 **            3. PAGES
 **------------------------------------------*/
+/*****************3.1 Board********************/
+.board {
+  background-color: white;
+  border: var(--b);
+  border-radius: var(--b_radius);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  margin: 30px auto;
+  width: 50vw;
+}
+
+.quadrant {
+  border: var(--b);
+  padding: 50px;
+  text-align: center;
+}
 /*# sourceMappingURL=styles.css.map */
