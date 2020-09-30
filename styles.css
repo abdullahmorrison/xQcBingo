@@ -98,6 +98,10 @@ img {
   text-align: center;
   width: 75px;
   height: 75px;
+  /*Overlap chip over everything*/
+  z-index: 100;
+  position: absolute;
+  top: 0;
 }
 
 /**------------------------------------------
