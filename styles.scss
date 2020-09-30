@@ -9,8 +9,9 @@
         1.1 General
         1.2 Header
       2. COMPONENTS
+        2.1 Board
+        2.2 Chip
       3. PAGES
-        3.1 Board
 */
 
 :root {
@@ -62,22 +63,34 @@ header {
 /**------------------------------------------
 **            2. COMPONENTS
 **------------------------------------------*/
-
-/**------------------------------------------
-**            3. PAGES
-**------------------------------------------*/
-/*****************3.1 Board********************/
+/*****************2.1 Board********************/
 .board{
   background-color: white;
   border: var(--b);
   border-radius: var(--b_radius);
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  margin: 30px auto;
-  width: 50vw;
+  grid-template-columns: repeat(3, auto);  
+  margin: auto;
+  width:50vw;
 }
 .quadrant {
   border: var(--b);
   padding: 50px;
   text-align: center;
 }
+img{
+  width: 5vw;
+}
+/*****************2.2 Chip********************/
+.chip{
+  background: red;
+  border: solid black 2px;
+  border-radius: 50px;
+  box-shadow: black 2px 1px;
+  text-align: center;
+  width: 75px;
+  height: 75px;
+}
+/**------------------------------------------
+**            3. PAGES
+**------------------------------------------*/

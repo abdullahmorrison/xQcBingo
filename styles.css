@@ -9,8 +9,9 @@
         1.1 General
         1.2 Header
       2. COMPONENTS
+        2.1 Board
+        2.2 Chip
       3. PAGES
-        3.1 Board
 */
 :root {
   /*COLORS*/
@@ -64,10 +65,7 @@ header a:hover {
 /**------------------------------------------
 **            2. COMPONENTS
 **------------------------------------------*/
-/**------------------------------------------
-**            3. PAGES
-**------------------------------------------*/
-/*****************3.1 Board********************/
+/*****************2.1 Board********************/
 .board {
   background-color: white;
   border: var(--b);
@@ -76,7 +74,7 @@ header a:hover {
   display: grid;
   -ms-grid-columns: (auto)[3];
       grid-template-columns: repeat(3, auto);
-  margin: 30px auto;
+  margin: auto;
   width: 50vw;
 }
 
@@ -85,4 +83,24 @@ header a:hover {
   padding: 50px;
   text-align: center;
 }
+
+img {
+  width: 5vw;
+}
+
+/*****************2.2 Chip********************/
+.chip {
+  background: red;
+  border: solid black 2px;
+  border-radius: 50px;
+  -webkit-box-shadow: black 2px 1px;
+          box-shadow: black 2px 1px;
+  text-align: center;
+  width: 75px;
+  height: 75px;
+}
+
+/**------------------------------------------
+**            3. PAGES
+**------------------------------------------*/
 /*# sourceMappingURL=styles.css.map */
