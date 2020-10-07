@@ -79,9 +79,8 @@ header a:hover {
 }
 
 .quadrant {
-  content: '';
   border: var(--b);
-  padding: 50px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -99,11 +98,13 @@ img {
   display: -ms-grid;
   display: grid;
   /*to align the text center*/
+  font-size: 22px;
+  margin-left: 30px;
+  /******************************************** !MAYBE FIX */
   place-items: center;
   /*to align the text center*/
   width: 100px;
   height: 100px;
-  font-size: 22px;
   /*Overlap chip over everything*/
   z-index: 100;
   position: absolute;
