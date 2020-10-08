@@ -1,7 +1,6 @@
 var chipsInARow = 3;
-/*
- * Inserts bingo chips in the quadrant clicked
- */
+
+ //* Inserts bingo chips in the quadrant clicked 
 $(".quadrant").click(function (e) {
     if($(e.target).is($(".quadrant")) 
         && $(e.target).find('.chip').length > 0){//removes chip from quadrant if you click a quadrant
@@ -14,11 +13,13 @@ $(".quadrant").click(function (e) {
         $(e.target).parent().prepend('<div class="chip" draggable="true">Chippy Chip</div>');
         if(checkWin(chipsInARow)){
             alert('BINGO!');
+            reset();
         }
     }else{//adds chip from quadrant if you click an element in a quadrant
         $(e.target).prepend('<div class="chip" draggable="true">Chippy Chip</div>');
         if(checkWin(chipsInARow)){
             alert('BINGO!');
+            reset();
         }
     }
 });
@@ -65,7 +66,8 @@ function checkWin(chipsInARow){
             return true;
         }
     }else if($(quadrants[chipsInARow-1]).find('.chip').length > 0){//checking the top right corner
-        for(j = chipsInARow-1; j<quadrants.length; j=j+chipsInARow-1){//looking at the left diagonal
+        //!WARNING this may cause future erros: quadrants.length-1 is done so you doesn't look at bottom right chip
+        for(j = chipsInARow-1; j<quadrants.length-1; j=j+chipsInARow-1){//looking at the left diagonal
             if($(quadrants[j]).find('.chip').length > 0){
                 chips++;
             }
@@ -75,4 +77,14 @@ function checkWin(chipsInARow){
         }  
     }
     return false;
+}
+
+//*Removes all chips from the board
+function reset(){
+    const quadrants = document.querySelectorAll(".quadrant");
+    for(j = 0; j<quadrants.length; j++){
+        if($(quadrants[j]).find('.chip').length > 0){
+            $(quadrants[j]).find('.chip').remove();
+        }
+    }
 }
