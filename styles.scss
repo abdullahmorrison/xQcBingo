@@ -11,7 +11,8 @@
       2. COMPONENTS
         2.1 Board
         2.2 Chip
-      4. PAGES
+      3. PAGES
+        3.1 Homepage
 */
 
 :root {
@@ -42,7 +43,7 @@ body {
   background-color: var(--mainColor);
 
   font-family: "Bebas Neue", cursive;
-  font-size: xx-large;
+  font-size: 100%;
 }
 a {
   text-decoration: none;
@@ -50,11 +51,10 @@ a {
 /*****************1.2 HEADER********************/
 header {
   background: var(--secondaryColor);
+  font-size: 2em;
+  text-align: center;
   li {
     display: inline-block;
-  }
-  a {
-    margin: 20px;
   }
   a:hover {
     color: var(--tertiaryColor);
@@ -69,9 +69,8 @@ header {
   border: var(--b);
   border-radius: var(--b_radius);
   display: grid;
-  grid-template-columns: repeat(3, auto);  
+  grid-template-columns: repeat(3, auto);
   margin: auto;
-  width:50vw;
 }
 .quadrant {
   border: var(--b);
@@ -93,11 +92,10 @@ img{
   border-radius: 50px;
   box-shadow: black 2px 1px;
   display: grid; /*to align the text center*/
-  font-size: 22px;
-  margin-left: 30px; /******************************************** !MAYBE FIX */
+  font-size: 1em;
   place-items: center;/*to align the text center*/
-  width: 100px;
-  height: 100px;
+  width: 5em;
+  height: 5em;
 
   /*Overlap chip over everything*/
   z-index:100;
@@ -105,5 +103,17 @@ img{
 }
 
 /**------------------------------------------
-**            4. PAGES
+**            3. PAGES
 **------------------------------------------*/
+/*****************3.1 Homepage********************/
+
+.instructions{
+  background: white;
+  border-radius: var(--b_radius);
+  padding: 20px;
+  width: 20%;
+}
+.game{
+  display: flex;
+  padding: 20px;
+}

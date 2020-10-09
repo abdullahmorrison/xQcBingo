@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
@@ -15,49 +18,68 @@
     <header>
       <nav>
         <ul>
-          <li><a href="index.html">xQc Bingo</a></li>
+          <li>
+            <a href="index.html"><h1>xQc Bingo</h1></a>
+          </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <div class="board">
-      <div class="quadrant">
-        <img src="images/xqcMS.svg" />
-        <p>Opened Paint</p>
+    <main class="game">
+      <div class="instructions">
+        <h2>Instructions</h2>
+        <p>
+          watch xQc's stream. If xQc does any of the actions stated on the
+          board, add a chip on the action he did.
+        </p>
+        <br />
+        <h3>How to add/remove a chip:</h3>
+        <p>Click on the tile that contains the action that xQc commited</p>
+        <br />
+        <h3>How to win (Bingo!):</h3>
+        <p>
+          You win if you have a full row, column, or diagonal filled with chips
+        </p>
       </div>
-      <div class="quadrant">
-        <img src="images/xqcRage.svg" />
-        <p>Malding</p>
+      <div class="board">
+        <div class="quadrant">
+          <img src="images/xqcMS.svg" />
+          <p>Opened Paint</p>
+        </div>
+        <div class="quadrant">
+          <img src="images/xqcRage.svg" />
+          <p>Malding</p>
+        </div>
+        <div class="quadrant">
+          <img src="images/xqcCheeto.svg" />
+          <p>Said "Cheeto"</p>
+        </div>
+        <div class="quadrant">
+          <img src="images/dansGame.svg" />
+          <p>Farted</p>
+        </div>
+        <div class="quadrant">
+          <img src="images/donoWall.svg" />
+          <p>Ignored Dono</p>
+        </div>
+        <div class="quadrant">
+          <img src="images/joy.svg" />
+          <p>Watched Tiktok</p>
+        </div>
+        <div class="quadrant">
+          <img src="images/xqcS.svg" />
+          <p>said "Go Agane"</p>
+        </div>
+        <div class="quadrant">
+          <img src="images/xqcSkip.svg" />
+          <p>Skipped a Video</p>
+        </div>
+        <div class="quadrant">
+          <img src="images/PogU.svg" />
+          <p>Popped Off</p>
+        </div>
       </div>
-      <div class="quadrant">
-        <img src="images/xqcCheeto.svg" />
-        <p>Said "Cheeto"</p>
-      </div>
-      <div class="quadrant">
-        <img src="images/dansGame.svg" />
-        <p>Farted</p>
-      </div>
-      <div class="quadrant">
-        <img src="images/donoWall.svg" />
-        <p>Ignored Dono</p>
-      </div>
-      <div class="quadrant">
-        <img src="images/joy.svg" />
-        <p>Watched Tiktok</p>
-      </div>
-      <div class="quadrant">
-        <img src="images/xqcS.svg" />
-        <p>said "Go Agane"</p>
-      </div>
-      <div class="quadrant">
-        <img src="images/xqcSkip.svg" />
-        <p>Skipped a Video</p>
-      </div>
-      <div class="quadrant">
-        <img src="images/PogU.svg" />
-        <p>Popped Off</p>
-      </div>
-    </div>
+    </main>
   </body>
   <script type="text/javascript" src="app.js"></script>
 </html>

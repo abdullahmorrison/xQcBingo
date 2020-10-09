@@ -11,7 +11,8 @@
       2. COMPONENTS
         2.1 Board
         2.2 Chip
-      4. PAGES
+      3. PAGES
+        3.1 Homepage
 */
 :root {
   /*COLORS*/
@@ -38,7 +39,7 @@
 body {
   background-color: var(--mainColor);
   font-family: "Bebas Neue", cursive;
-  font-size: xx-large;
+  font-size: 100%;
 }
 
 a {
@@ -48,14 +49,12 @@ a {
 /*****************1.2 HEADER********************/
 header {
   background: var(--secondaryColor);
+  font-size: 2em;
+  text-align: center;
 }
 
 header li {
   display: inline-block;
-}
-
-header a {
-  margin: 20px;
 }
 
 header a:hover {
@@ -75,7 +74,6 @@ header a:hover {
   -ms-grid-columns: (auto)[3];
       grid-template-columns: repeat(3, auto);
   margin: auto;
-  width: 50vw;
 }
 
 .quadrant {
@@ -103,19 +101,31 @@ img {
   display: -ms-grid;
   display: grid;
   /*to align the text center*/
-  font-size: 22px;
-  margin-left: 30px;
-  /******************************************** !MAYBE FIX */
+  font-size: 1em;
   place-items: center;
   /*to align the text center*/
-  width: 100px;
-  height: 100px;
+  width: 5em;
+  height: 5em;
   /*Overlap chip over everything*/
   z-index: 100;
   position: absolute;
 }
 
 /**------------------------------------------
-**            4. PAGES
+**            3. PAGES
 **------------------------------------------*/
+/*****************3.1 Homepage********************/
+.instructions {
+  background: white;
+  border-radius: var(--b_radius);
+  padding: 20px;
+  width: 20%;
+}
+
+.game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
 /*# sourceMappingURL=styles.css.map */
