@@ -15,6 +15,7 @@ This is a game where twitch viewers that watch twitch.tv/xQcOW can play Bingo.
 - [ ] Show the website to r/xqcow
 
 ### Future Possiblities:
+- Add a board randomizer
 - Add Twitch Login (I have difficulty integrating oauth into my code. Need help with it)
 - Add a leaderboard
 - Add a database which will allow the following:
