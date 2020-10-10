@@ -12,14 +12,20 @@ $(".quadrant").click(function (e) {
         && $(e.target).parent().find('.chip').length == 0){//adds chip from quadrant if you click a quadrant
         $(e.target).parent().prepend('<div class="chip">Chippy Chip</div>');
         if(checkWin(chipsInARow)){
-            alert('BINGO!');
-            reset();
+            setTimeout(function(){ //so it shows the win before reseting
+                alert('BINGO!'); 
+                reset();
+            }, 
+            100);
         }
     }else{//adds chip from quadrant if you click an element in a quadrant
         $(e.target).prepend('<div class="chip">Chippy Chip</div>');
         if(checkWin(chipsInARow)){
-            alert('BINGO!');
-            reset();
+            setTimeout(function(){ //so it shows the win before reseting
+                alert('BINGO!'); 
+                reset();
+            }, 
+            100);
         }
     }
 });
