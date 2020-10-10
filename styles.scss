@@ -13,6 +13,13 @@
         2.2 Chip
       3. PAGES
         3.1 Homepage
+        3.2 Contact
+
+          Possible Issues
+        ------------------
+      1. position absolute: for a nav element and the instruction panel I used 
+      position abosulte. That may cause layout issues that I am not aware of.
+
 */
 
 :root {
@@ -53,8 +60,15 @@ header {
   background: var(--secondaryColor);
   font-size: 2em;
   text-align: center;
+  position: relative;
   li {
     display: inline-block;
+    vertical-align: middle;
+    .rightLinks{
+      position: absolute;
+      left: 75%;
+      top: 25%;
+    }
   }
   a:hover {
     color: var(--tertiaryColor);
@@ -77,10 +91,12 @@ header {
   display: grid;
   grid-template-columns: repeat(3, auto);
   margin: auto;
+  width: 33vw;
 }
 .quadrant {
   border: var(--b);
   padding: 20px;
+  position: relative;
   text-align: center;
   img {
     width: 5vw;
@@ -104,8 +120,10 @@ header {
   width: 5em;
   height: 5em;
 
+  /*Positioning the chip*/
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
   /*Overlap chip over everything*/
-  z-index: 100;
   position: absolute;
 }
 
@@ -118,9 +136,51 @@ header {
   background: white;
   border-radius: var(--b_radius);
   padding: 20px;
-  width: 20%;
+  width: 25vw;
+
+  position: absolute;
+  top: 20px;
+  p{
+    margin-bottom: 10px;
+  }
 }
 .game {
-  display: flex;
   padding: 20px;
+  position: relative;
+}
+/*****************3.2 Contact********************/
+.contactItems{
+  display: flex;
+}
+.contact{
+  display: grid;
+  padding: 20px;
+  margin: 20px;
+  width: 60%;
+  label{
+    color: var(--secondaryColor);
+    font-size: 1.5em;
+  }
+  input, textarea{
+    border: var(--b);
+    border-radius: var(--b_radius);
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+}
+.infoPanel{
+  background: var(--secondaryColor);
+  border: var(--b);
+  border-radius: var(--b_radius);
+  display: grid;
+  font-size: 1.3em;
+  padding: 20px;
+  margin: 20px;
+  width: 40vw;
+  ul{
+    list-style-type: none;
+  }
+  img{
+    width: 50px;
+  }
 }

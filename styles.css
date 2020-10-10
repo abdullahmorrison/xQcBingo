@@ -13,6 +13,13 @@
         2.2 Chip
       3. PAGES
         3.1 Homepage
+        3.2 Contact
+
+          Possible Issues
+        ------------------
+      1. position absolute: for a nav element and the instruction panel I used 
+      position abosulte. That may cause layout issues that I am not aware of.
+
 */
 :root {
   /*COLORS*/
@@ -51,10 +58,18 @@ header {
   background: var(--secondaryColor);
   font-size: 2em;
   text-align: center;
+  position: relative;
 }
 
 header li {
   display: inline-block;
+  vertical-align: middle;
+}
+
+header li .rightLinks {
+  position: absolute;
+  left: 75%;
+  top: 25%;
 }
 
 header a:hover {
@@ -82,11 +97,13 @@ header img {
   -ms-grid-columns: (auto)[3];
       grid-template-columns: repeat(3, auto);
   margin: auto;
+  width: 33vw;
 }
 
 .quadrant {
   border: var(--b);
   padding: 20px;
+  position: relative;
   text-align: center;
 }
 
@@ -114,8 +131,10 @@ header img {
   /*to align the text center*/
   width: 5em;
   height: 5em;
+  /*Positioning the chip*/
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
   /*Overlap chip over everything*/
-  z-index: 100;
   position: absolute;
 }
 
@@ -127,13 +146,64 @@ header img {
   background: white;
   border-radius: var(--b_radius);
   padding: 20px;
-  width: 20%;
+  width: 25vw;
+  position: absolute;
+  top: 20px;
+}
+
+.instructions p {
+  margin-bottom: 10px;
 }
 
 .game {
+  padding: 20px;
+  position: relative;
+}
+
+/*****************3.2 Contact********************/
+.contactItems {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.contact {
+  display: -ms-grid;
+  display: grid;
   padding: 20px;
+  margin: 20px;
+  width: 60%;
+}
+
+.contact label {
+  color: var(--secondaryColor);
+  font-size: 1.5em;
+}
+
+.contact input, .contact textarea {
+  border: var(--b);
+  border-radius: var(--b_radius);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.infoPanel {
+  background: var(--secondaryColor);
+  border: var(--b);
+  border-radius: var(--b_radius);
+  display: -ms-grid;
+  display: grid;
+  font-size: 1.3em;
+  padding: 20px;
+  margin: 20px;
+  width: 40vw;
+}
+
+.infoPanel ul {
+  list-style-type: none;
+}
+
+.infoPanel img {
+  width: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
