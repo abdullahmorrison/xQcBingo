@@ -18,7 +18,7 @@
   /*COLORS*/
   --mainColor: #3d3d3d;
   --secondaryColor: #dedede;
-  --tertiaryColor: red;
+  --tertiaryColor: purple;
   /*TEXT*/
   --mainText: #000000;
   /*BORDER*/
@@ -61,6 +61,14 @@ header a:hover {
   color: var(--tertiaryColor);
 }
 
+header a:hover h1 {
+  color: var(--tertiaryColor);
+}
+
+header img {
+  width: 5vw;
+}
+
 /**------------------------------------------
 **            2. COMPONENTS
 **------------------------------------------*/
@@ -82,13 +90,13 @@ header a:hover {
   text-align: center;
 }
 
+.quadrant img {
+  width: 5vw;
+}
+
 .quadrant:hover {
   background-color: #dedede;
   cursor: pointer;
-}
-
-img {
-  width: 5vw;
 }
 
 /*****************2.2 Chip********************/

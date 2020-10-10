@@ -19,7 +19,7 @@
   /*COLORS*/
   --mainColor: #3d3d3d;
   --secondaryColor: #dedede;
-  --tertiaryColor: red;
+  --tertiaryColor: purple;
 
   /*TEXT*/
   --mainText: #000000;
@@ -58,13 +58,19 @@ header {
   }
   a:hover {
     color: var(--tertiaryColor);
+    h1 {
+      color: var(--tertiaryColor);
+    }
+  }
+  img {
+    width: 5vw;
   }
 }
 /**------------------------------------------
 **            2. COMPONENTS
 **------------------------------------------*/
 /*****************2.1 Board********************/
-.board{
+.board {
   background-color: white;
   border: var(--b);
   border-radius: var(--b_radius);
@@ -76,29 +82,30 @@ header {
   border: var(--b);
   padding: 20px;
   text-align: center;
+  img {
+    width: 5vw;
+  }
 }
 .quadrant:hover {
   background-color: #dedede;
   cursor: pointer;
 }
-img{
-  width: 5vw;
-}
+
 /*****************2.2 Chip********************/
 
-.chip{
+.chip {
   background: red;
   border: solid black 2px;
   border-radius: 50px;
   box-shadow: black 2px 1px;
   display: grid; /*to align the text center*/
   font-size: 1em;
-  place-items: center;/*to align the text center*/
+  place-items: center; /*to align the text center*/
   width: 5em;
   height: 5em;
 
   /*Overlap chip over everything*/
-  z-index:100;
+  z-index: 100;
   position: absolute;
 }
 
@@ -107,13 +114,13 @@ img{
 **------------------------------------------*/
 /*****************3.1 Homepage********************/
 
-.instructions{
+.instructions {
   background: white;
   border-radius: var(--b_radius);
   padding: 20px;
   width: 20%;
 }
-.game{
+.game {
   display: flex;
   padding: 20px;
 }
