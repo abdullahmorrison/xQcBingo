@@ -253,11 +253,7 @@ header img {
 }
 
 .wave {
-  -webkit-animation: wave 4s;
-          animation: wave 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation: wave 2s infinite;
+          animation: wave 2s infinite;
 }
 /*# sourceMappingURL=styles.css.map */
