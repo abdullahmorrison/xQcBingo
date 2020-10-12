@@ -8,12 +8,13 @@
       1. LAYOUTS
         1.1 General
         1.2 Header
-      2. COMPONENTS
-        2.1 Board
-        2.2 Chip
-      3. PAGES
-        3.1 Homepage
-        3.2 Contact
+      2. PAGES
+        2.1 Homepage
+        2.2 Contact
+      3. COMPONENTS
+        3.1 Board
+        3.2 Chip
+      4. Animations
 
           Possible Issues
         ------------------
@@ -85,63 +86,9 @@ header img {
 }
 
 /**------------------------------------------
-**            2. COMPONENTS
+**            2. PAGES
 **------------------------------------------*/
-/*****************2.1 Board********************/
-.board {
-  background-color: white;
-  border: var(--b);
-  border-radius: var(--b_radius);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[3];
-      grid-template-columns: repeat(3, auto);
-  margin: auto;
-  width: 33vw;
-}
-
-.quadrant {
-  border: var(--b);
-  padding: 20px;
-  position: relative;
-  text-align: center;
-}
-
-.quadrant img {
-  width: 5vw;
-}
-
-.quadrant:hover {
-  background-color: #dedede;
-  cursor: pointer;
-}
-
-/*****************2.2 Chip********************/
-.chip {
-  background: red;
-  border: solid black 2px;
-  border-radius: 50px;
-  -webkit-box-shadow: black 2px 1px;
-          box-shadow: black 2px 1px;
-  display: -ms-grid;
-  display: grid;
-  /*to align the text center*/
-  font-size: 1em;
-  place-items: center;
-  /*to align the text center*/
-  width: 5em;
-  height: 5em;
-  /*Positioning the chip*/
-  top: calc(50% - 50px);
-  left: calc(50% - 50px);
-  /*Overlap chip over everything*/
-  position: absolute;
-}
-
-/**------------------------------------------
-**            3. PAGES
-**------------------------------------------*/
-/*****************3.1 Homepage********************/
+/*****************2.1 Homepage********************/
 .instructions {
   background: white;
   border-radius: var(--b_radius);
@@ -160,7 +107,7 @@ header img {
   position: relative;
 }
 
-/*****************3.2 Contact********************/
+/*****************2.2 Contact********************/
 .contactItems {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,5 +152,112 @@ header img {
 
 .infoPanel img {
   width: 50px;
+}
+
+/**------------------------------------------
+**            3. COMPONENTS
+**------------------------------------------*/
+/*****************3.1 Board********************/
+.board {
+  background-color: white;
+  border: var(--b);
+  border-radius: var(--b_radius);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  margin: auto;
+  width: 33vw;
+}
+
+.quadrant {
+  border: var(--b);
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.quadrant img {
+  width: 5vw;
+}
+
+.quadrant:hover {
+  background-color: #dedede;
+  cursor: pointer;
+}
+
+/*****************3.2 Chip********************/
+.chip {
+  background: red;
+  border: solid black 2px;
+  border-radius: 50px;
+  -webkit-box-shadow: black 2px 1px;
+          box-shadow: black 2px 1px;
+  display: -ms-grid;
+  display: grid;
+  /*to align the text center*/
+  font-size: 1em;
+  place-items: center;
+  /*to align the text center*/
+  width: 5em;
+  height: 5em;
+  /*Positioning the chip*/
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  /*Overlap chip over everything*/
+  position: absolute;
+}
+
+/**------------------------------------------
+**            4. Animations
+**------------------------------------------*/
+@-webkit-keyframes wave {
+  from {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  50% {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  to {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+}
+@keyframes wave {
+  from {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  50% {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  to {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+}
+
+.wave {
+  -webkit-animation: wave 4s;
+          animation: wave 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 /*# sourceMappingURL=styles.css.map */
