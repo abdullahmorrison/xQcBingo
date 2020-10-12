@@ -8,12 +8,13 @@
       1. LAYOUTS
         1.1 General
         1.2 Header
-      2. COMPONENTS
-        2.1 Board
-        2.2 Chip
-      3. PAGES
-        3.1 Homepage
-        3.2 Contact
+      2. PAGES
+        2.1 Homepage
+        2.2 Contact
+      3. COMPONENTS
+        3.1 Board
+        3.2 Chip
+      4. Animations
 
           Possible Issues
         ------------------
@@ -81,56 +82,9 @@ header {
   }
 }
 /**------------------------------------------
-**            2. COMPONENTS
+**            2. PAGES
 **------------------------------------------*/
-/*****************2.1 Board********************/
-.board {
-  background-color: white;
-  border: var(--b);
-  border-radius: var(--b_radius);
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  margin: auto;
-  width: 33vw;
-}
-.quadrant {
-  border: var(--b);
-  padding: 20px;
-  position: relative;
-  text-align: center;
-  img {
-    width: 5vw;
-  }
-}
-.quadrant:hover {
-  background-color: #dedede;
-  cursor: pointer;
-}
-
-/*****************2.2 Chip********************/
-
-.chip {
-  background: red;
-  border: solid black 2px;
-  border-radius: 50px;
-  box-shadow: black 2px 1px;
-  display: grid; /*to align the text center*/
-  font-size: 1em;
-  place-items: center; /*to align the text center*/
-  width: 5em;
-  height: 5em;
-
-  /*Positioning the chip*/
-  top: calc(50% - 50px);
-  left: calc(50% - 50px);
-  /*Overlap chip over everything*/
-  position: absolute;
-}
-
-/**------------------------------------------
-**            3. PAGES
-**------------------------------------------*/
-/*****************3.1 Homepage********************/
+/*****************2.1 Homepage********************/
 
 .instructions {
   background: white;
@@ -148,7 +102,7 @@ header {
   padding: 20px;
   position: relative;
 }
-/*****************3.2 Contact********************/
+/*****************2.2 Contact********************/
 .contactItems{
   display: flex;
 }
@@ -183,4 +137,72 @@ header {
   img{
     width: 50px;
   }
+}
+/**------------------------------------------
+**            3. COMPONENTS
+**------------------------------------------*/
+/*****************3.1 Board********************/
+.board {
+  background-color: white;
+  border: var(--b);
+  border-radius: var(--b_radius);
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin: auto;
+  width: 33vw;
+}
+.quadrant {
+  border: var(--b);
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  img {
+    width: 5vw;
+  }
+}
+.quadrant:hover {
+  background-color: #dedede;
+  cursor: pointer;
+}
+
+/*****************3.2 Chip********************/
+
+.chip {
+  background: red;
+  border: solid black 2px;
+  border-radius: 50px;
+  box-shadow: black 2px 1px;
+  display: grid; /*to align the text center*/
+  font-size: 1em;
+  place-items: center; /*to align the text center*/
+  width: 5em;
+  height: 5em;
+
+  /*Positioning the chip*/
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  /*Overlap chip over everything*/
+  position: absolute;
+}
+/**------------------------------------------
+**            4. Animations
+**------------------------------------------*/
+@keyframes wave{
+  from{
+    transform-origin: bottom;
+    transform: rotate(30deg);
+  }
+  50%{
+    transform-origin: bottom;
+    transform: rotate(-25deg);
+  }
+  to{
+    transform-origin: bottom;
+    transform: rotate(30deg);
+  }
+}
+.wave{
+  animation: wave 4s;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
 }
