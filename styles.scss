@@ -139,16 +139,38 @@ header {
   background: var(--secondaryColor);
   border: var(--b);
   border-radius: var(--b_radius);
-  display: grid;
   font-size: 1.3em;
   padding: 20px;
+  padding-top: 0;
   margin: 20px;
   width: 40vw;
+  .infoText{
+    padding: 20px 0;
+  }
   ul{
     list-style-type: none;
+    li{
+      padding: 10px 0;
+    }
+    img{
+      vertical-align: middle;
+    }
   }
-  img{
+  .wave{
+    width: 40px;
+    animation: wave 2s infinite;
+  }
+  .kofiLogo{
+    width: 55px;
+  }
+  .twitchLogo{
     width: 50px;
+  }
+  .githubLogo{
+    width: 45px;
+  }
+  .linkedinLogo{
+    width: 40px;
   }
 }
 /**------------------------------------------
@@ -213,7 +235,4 @@ header {
     transform-origin: bottom;
     transform: rotate(30deg);
   }
-}
-.wave{
-  animation: wave 2s infinite;
 }

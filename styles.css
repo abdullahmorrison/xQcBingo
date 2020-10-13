@@ -153,20 +153,49 @@ header img {
   background: var(--secondaryColor);
   border: var(--b);
   border-radius: var(--b_radius);
-  display: -ms-grid;
-  display: grid;
   font-size: 1.3em;
   padding: 20px;
+  padding-top: 0;
   margin: 20px;
   width: 40vw;
+}
+
+.infoPanel .infoText {
+  padding: 20px 0;
 }
 
 .infoPanel ul {
   list-style-type: none;
 }
 
-.infoPanel img {
+.infoPanel ul li {
+  padding: 10px 0;
+}
+
+.infoPanel ul img {
+  vertical-align: middle;
+}
+
+.infoPanel .wave {
+  width: 40px;
+  -webkit-animation: wave 2s infinite;
+          animation: wave 2s infinite;
+}
+
+.infoPanel .kofiLogo {
+  width: 55px;
+}
+
+.infoPanel .twitchLogo {
   width: 50px;
+}
+
+.infoPanel .githubLogo {
+  width: 45px;
+}
+
+.infoPanel .linkedinLogo {
+  width: 40px;
 }
 
 /**------------------------------------------
@@ -265,10 +294,5 @@ header img {
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
   }
-}
-
-.wave {
-  -webkit-animation: wave 2s infinite;
-          animation: wave 2s infinite;
 }
 /*# sourceMappingURL=styles.css.map */
