@@ -107,6 +107,21 @@ header img {
   position: relative;
 }
 
+.credit {
+  background-color: #ffffff;
+  border: var(--b);
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 15vw;
+}
+
+.credit h2 {
+  color: purple;
+}
+
 /*****************2.2 Contact********************/
 .contactItems {
   display: -webkit-box;
