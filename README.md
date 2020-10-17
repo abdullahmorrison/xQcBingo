@@ -7,16 +7,16 @@ This is a game where twitch viewers that watch twitch.tv/xQcOW can play Bingo.
 - [ ] Design a Bingo win popup
   - [ ] Possibly add a win animation
 - [x] Add Ko-fi link to contact page
+- [ ] Save the bingo progress through cookies
 - [ ] Refactor the CSS
   - [ ] Allow for scalabilty for different displays
-- [ ] Add drag and drop feature for chips
 - [ ] Set up SMTPJs for Contacts
 - [ ] Add a website visitor count
 - [ ] Final clean up/test of code
 - [ ] Show the website to r/xqcow
 
 ### Future Possiblities:
-- Save the bingo progress through cookies
+- Add drag and drop feature for chips
 - Add a board randomizer
 - Add Twitch Login (I have difficulty integrating oauth into my code. Need help with it)
 - Add a leaderboard
