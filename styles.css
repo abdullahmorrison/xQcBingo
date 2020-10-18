@@ -12,9 +12,9 @@
         2.1 Homepage
         2.2 Contact
       3. COMPONENTS
-        3.1 Board
-        3.2 Chip
-      4. Animations
+        3.1 Chip
+      4. MEDIA QUERIES
+      5. ANIMATIONS
 
           Possible Issues
         ------------------
@@ -60,6 +60,7 @@ header {
   font-size: 2em;
   text-align: center;
   position: relative;
+  padding-top: 10px;
 }
 
 header li {
@@ -85,6 +86,10 @@ header img {
   width: 5vw;
 }
 
+header .logo {
+  width: 65px;
+}
+
 /**------------------------------------------
 **            2. PAGES
 **------------------------------------------*/
@@ -94,6 +99,7 @@ header img {
   border-radius: var(--b_radius);
   padding: 20px;
   width: 25vw;
+  margin: auto;
   position: absolute;
   top: 20px;
 }
@@ -107,15 +113,42 @@ header img {
   position: relative;
 }
 
+.board {
+  background-color: white;
+  border: var(--b);
+  border-radius: var(--b_radius);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  margin: auto;
+  width: 33vw;
+}
+
+.quadrant {
+  border: var(--b);
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.quadrant img {
+  width: 65px;
+}
+
+.quadrant:hover {
+  background-color: #dedede;
+  cursor: pointer;
+}
+
 .credit {
   background-color: #ffffff;
   border: var(--b);
   border-radius: 30px;
-  margin: auto;
-  margin-top: 10px;
+  margin: 10px auto;
   padding: 10px;
   text-align: center;
-  width: 15vw;
+  width: 200px;
 }
 
 .credit h2 {
@@ -157,7 +190,7 @@ header img {
   padding: 20px;
   padding-top: 0;
   margin: 20px;
-  width: 40vw;
+  width: 40%;
 }
 
 .infoPanel .infoText {
@@ -201,36 +234,7 @@ header img {
 /**------------------------------------------
 **            3. COMPONENTS
 **------------------------------------------*/
-/*****************3.1 Board********************/
-.board {
-  background-color: white;
-  border: var(--b);
-  border-radius: var(--b_radius);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[3];
-      grid-template-columns: repeat(3, auto);
-  margin: auto;
-  width: 33vw;
-}
-
-.quadrant {
-  border: var(--b);
-  padding: 20px;
-  position: relative;
-  text-align: center;
-}
-
-.quadrant img {
-  width: 5vw;
-}
-
-.quadrant:hover {
-  background-color: #dedede;
-  cursor: pointer;
-}
-
-/*****************3.2 Chip********************/
+/*****************3.1 Chip********************/
 .chip {
   background: red;
   border: solid black 2px;
@@ -253,7 +257,27 @@ header img {
 }
 
 /**------------------------------------------
-**            4. Animations
+**            4. MEDIA QUERIES
+**------------------------------------------*/
+@media all and (max-width: 1340px) {
+  .board {
+    width: 450px;
+  }
+  .instructions {
+    position: static;
+    width: 350px;
+  }
+  .contactItems {
+    display: block;
+  }
+  .contactItems .contact, .contactItems .infoPanel {
+    width: 80vw;
+    margin: auto;
+  }
+}
+
+/**------------------------------------------
+**            5. ANIMATIONS
 **------------------------------------------*/
 @-webkit-keyframes wave {
   from {

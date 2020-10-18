@@ -12,9 +12,9 @@
         2.1 Homepage
         2.2 Contact
       3. COMPONENTS
-        3.1 Board
-        3.2 Chip
-      4. Animations
+        3.1 Chip
+      4. MEDIA QUERIES
+      5. ANIMATIONS
 
           Possible Issues
         ------------------
@@ -62,6 +62,7 @@ header {
   font-size: 2em;
   text-align: center;
   position: relative;
+  padding-top: 10px;
   li {
     display: inline-block;
     vertical-align: middle;
@@ -80,6 +81,9 @@ header {
   img {
     width: 5vw;
   }
+  .logo{
+    width: 65px;
+  }
 }
 /**------------------------------------------
 **            2. PAGES
@@ -91,6 +95,7 @@ header {
   border-radius: var(--b_radius);
   padding: 20px;
   width: 25vw;
+  margin: auto;
 
   position: absolute;
   top: 20px;
@@ -102,15 +107,36 @@ header {
   padding: 20px;
   position: relative;
 }
+.board {
+  background-color: white;
+  border: var(--b);
+  border-radius: var(--b_radius);
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin: auto;
+  width: 33vw;
+}
+.quadrant {
+  border: var(--b);
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  img {
+    width: 65px;
+  }
+}
+.quadrant:hover {
+  background-color: #dedede;
+  cursor: pointer;
+}
 .credit{
   background-color: #ffffff;
   border: var(--b);
   border-radius: 30px;
-  margin: auto;
-  margin-top: 10px;
+  margin: 10px auto;
   padding: 10px;
   text-align: center;
-  width: 15vw;
+  width: 200px;
   h2{
     color: purple;
   }
@@ -143,7 +169,7 @@ header {
   padding: 20px;
   padding-top: 0;
   margin: 20px;
-  width: 40vw;
+  width: 40%;
   .infoText{
     padding: 20px 0;
   }
@@ -176,32 +202,7 @@ header {
 /**------------------------------------------
 **            3. COMPONENTS
 **------------------------------------------*/
-/*****************3.1 Board********************/
-.board {
-  background-color: white;
-  border: var(--b);
-  border-radius: var(--b_radius);
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  margin: auto;
-  width: 33vw;
-}
-.quadrant {
-  border: var(--b);
-  padding: 20px;
-  position: relative;
-  text-align: center;
-  img {
-    width: 5vw;
-  }
-}
-.quadrant:hover {
-  background-color: #dedede;
-  cursor: pointer;
-}
-
-/*****************3.2 Chip********************/
-
+/*****************3.1 Chip********************/
 .chip {
   background: red;
   border: solid black 2px;
@@ -220,7 +221,26 @@ header {
   position: absolute;
 }
 /**------------------------------------------
-**            4. Animations
+**            4. MEDIA QUERIES
+**------------------------------------------*/
+@media all and(max-width: 1340px){
+  .board{
+    width: 450px;
+  }
+  .instructions{
+    position: static;
+    width: 350px;
+  }
+  .contactItems{
+    display: block;
+    .contact, .infoPanel{
+      width: 80vw;
+      margin: auto;
+    }
+  }
+}
+/**------------------------------------------
+**            5. ANIMATIONS
 **------------------------------------------*/
 @keyframes wave{
   from{
