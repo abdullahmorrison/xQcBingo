@@ -231,6 +231,18 @@ header .logo {
   }
 }
 
+@media all and (max-width: 500px) {
+  .instructions {
+    width: 80vw;
+  }
+  .board {
+    width: 80vw;
+  }
+  .board img {
+    width: 45px;
+  }
+}
+
 /**------------------------------------------
 **            5. ANIMATIONS
 **------------------------------------------*/
