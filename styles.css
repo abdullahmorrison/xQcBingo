@@ -156,40 +156,14 @@ header .logo {
 }
 
 /*****************2.2 Contact********************/
-.contactItems {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contact {
-  display: -ms-grid;
-  display: grid;
-  padding: 20px;
-  margin: 20px;
-  width: 60%;
-}
-
-.contact label {
-  color: var(--secondaryColor);
-  font-size: 1.5em;
-}
-
-.contact input, .contact textarea {
-  border: var(--b);
-  border-radius: var(--b_radius);
-  margin-bottom: 10px;
-  padding: 10px;
-}
-
 .infoPanel {
   background: var(--secondaryColor);
   border: var(--b);
   border-radius: var(--b_radius);
   font-size: 1.3em;
   padding: 20px;
-  padding-top: 0;
-  margin: 20px;
+  margin: auto;
+  margin-top: 20px;
   width: 40%;
 }
 
@@ -213,22 +187,6 @@ header .logo {
   width: 40px;
   -webkit-animation: wave 2s infinite;
           animation: wave 2s infinite;
-}
-
-.infoPanel .kofiLogo {
-  width: 55px;
-}
-
-.infoPanel .twitchLogo {
-  width: 50px;
-}
-
-.infoPanel .githubLogo {
-  width: 45px;
-}
-
-.infoPanel .linkedinLogo {
-  width: 40px;
 }
 
 /**------------------------------------------
@@ -266,13 +224,10 @@ header .logo {
   .instructions {
     position: static;
     width: 350px;
+    margin: 10px auto;
   }
-  .contactItems {
-    display: block;
-  }
-  .contactItems .contact, .contactItems .infoPanel {
+  .infoPanel {
     width: 80vw;
-    margin: auto;
   }
 }
 

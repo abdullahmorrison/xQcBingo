@@ -96,7 +96,6 @@ header {
   padding: 20px;
   width: 25vw;
   margin: auto;
-
   position: absolute;
   top: 20px;
   p{
@@ -142,33 +141,14 @@ header {
   }
 }
 /*****************2.2 Contact********************/
-.contactItems{
-  display: flex;
-}
-.contact{
-  display: grid;
-  padding: 20px;
-  margin: 20px;
-  width: 60%;
-  label{
-    color: var(--secondaryColor);
-    font-size: 1.5em;
-  }
-  input, textarea{
-    border: var(--b);
-    border-radius: var(--b_radius);
-    margin-bottom: 10px;
-    padding: 10px;
-  }
-}
 .infoPanel{
   background: var(--secondaryColor);
   border: var(--b);
   border-radius: var(--b_radius);
   font-size: 1.3em;
   padding: 20px;
-  padding-top: 0;
-  margin: 20px;
+  margin: auto;
+  margin-top: 20px;
   width: 40%;
   .infoText{
     padding: 20px 0;
@@ -185,18 +165,6 @@ header {
   .wave{
     width: 40px;
     animation: wave 2s infinite;
-  }
-  .kofiLogo{
-    width: 55px;
-  }
-  .twitchLogo{
-    width: 50px;
-  }
-  .githubLogo{
-    width: 45px;
-  }
-  .linkedinLogo{
-    width: 40px;
   }
 }
 /**------------------------------------------
@@ -230,13 +198,10 @@ header {
   .instructions{
     position: static;
     width: 350px;
+    margin: 10px auto;
   }
-  .contactItems{
-    display: block;
-    .contact, .infoPanel{
-      width: 80vw;
-      margin: auto;
-    }
+  .infoPanel{
+    width: 80vw;
   }
 }
 /**------------------------------------------
