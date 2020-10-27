@@ -10,9 +10,7 @@ This is a game where twitch viewers that watch twitch.tv/xQcOW can play Bingo.
 - [ ] Save the bingo progress through cookies
 - [ ] Refactor the CSS
   - [ ] Allow for scalabilty for different displays
-- [ ] Set up SMTPJs for Contacts
-- [ ] Add a website visitor count
-- [ ] Final clean up/test of code
+- [ ] clean up/test of code
 - [ ] Show the website to r/xqcow
 
 ### Future Possiblities:
@@ -24,7 +22,8 @@ This is a game where twitch viewers that watch twitch.tv/xQcOW can play Bingo.
   - Users can create boards and upload them so that other viewers can play their board
   - Multiple users can play on the same board
     - Moderators can run a huge Bingo game where the winner can win a prize (ex: gifted sub)
-
+- Set up SMTPJs for Contacts
+- Add a website visitor count (Or adding analytics viewer)
 ### Possible Issues
 ##### CSS issues:
 1. position absolute: for a nav element and the instruction panel I used 
