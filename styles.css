@@ -241,6 +241,9 @@ header .logo {
   .board img {
     width: 45px;
   }
+  .instructions, .board {
+    width: 80vw;
+  }
 }
 
 /**------------------------------------------
