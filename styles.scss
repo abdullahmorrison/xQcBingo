@@ -194,9 +194,8 @@ header {
   border-radius: 10px;
   box-shadow: 2px 3px 3px rgb(41, 41, 41);
   cursor: pointer;
-  margin: 20px auto;
   padding: 5px;
-  margin: 5px 46%;
+  margin: 5px calc(50% - 60px);
   text-align: center;
   h3{
     color: #002fff;

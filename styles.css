@@ -221,9 +221,8 @@ header .logo {
   -webkit-box-shadow: 2px 3px 3px #292929;
           box-shadow: 2px 3px 3px #292929;
   cursor: pointer;
-  margin: 20px auto;
   padding: 5px;
-  margin: 5px 46%;
+  margin: 5px calc(50% - 60px);
   text-align: center;
 }
 
