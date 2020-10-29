@@ -188,6 +188,26 @@ header {
   /*Overlap chip over everything*/
   position: absolute;
 }
+.randomizer{
+  background-color: #ffffff;
+  border: var(--b);
+  border-radius: 10px;
+  box-shadow: 2px 3px 3px rgb(41, 41, 41);
+  cursor: pointer;
+  margin: 20px auto;
+  padding: 5px;
+  margin: 5px 46%;
+  text-align: center;
+  h3{
+    color: #002fff;
+  }
+}
+.randomizer:active{
+  box-shadow: none;
+}
+.randomizer:hover{
+  background-color: #d4d4d6;
+}
 /**------------------------------------------
 **            4. MEDIA QUERIES
 **------------------------------------------*/
