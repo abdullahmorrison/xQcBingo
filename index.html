@@ -32,7 +32,7 @@
     </script>
     <title>xQc Bingo</title>
   </head>
-  <body>
+  <body onload="randomizeBoard()">
     <header>
       <nav>
         <ul>
@@ -80,6 +80,7 @@
         </p>
         <h2 style="color: green;">Board expansion coming soon</h2>
       </div>
+      <button class="randomizer" onclick="randomizeBoard()"><h3>Randomize Board</h3></button> 
       <div class="board">
         <div class="quadrant">
           <img src="images/boardImages/xqcWar.svg" />

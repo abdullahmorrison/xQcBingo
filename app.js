@@ -94,3 +94,14 @@ function reset(){
         }
     }
 }
+
+//*Randomize the board
+function randomizeBoard(){
+    //Code taken from https://stackoverflow.com/questions/18483241/random-div-order-on-page-load
+    var quadrants = $(".quadrant");
+    for(var i = 0; i < quadrants.length; i++){
+        var target = Math.floor(Math.random() * quadrants.length -1) + 1;
+        var target2 = Math.floor(Math.random() * quadrants.length -1) +1;
+        quadrants.eq(target).before(quadrants.eq(target2));
+    }
+}
