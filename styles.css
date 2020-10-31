@@ -13,6 +13,7 @@
         2.2 Contact
       3. COMPONENTS
         3.1 Chip
+        3.2 Buttons
       4. MEDIA QUERIES
       5. ANIMATIONS
 
@@ -214,29 +215,22 @@ header .logo {
   position: absolute;
 }
 
-.randomizer {
-  background-color: #ffffff;
-  border: solid #533a3a;
-  border-radius: 10px;
-  -webkit-box-shadow: 3px 4px 2px #111111;
-          box-shadow: 3px 4px 2px #111111;
+/*****************3.2 Buttons********************/
+button {
+  background-color: #24ad2a;
+  color: white;
   cursor: pointer;
   padding: 5px;
   margin: 5px calc(50% - 60px);
   text-align: center;
 }
 
-.randomizer h3 {
-  color: #002fff;
+button h3 {
+  color: #ffffff;
 }
 
-.randomizer:active {
-  -webkit-box-shadow: 2px 3px 2px #111111;
-          box-shadow: 2px 3px 2px #111111;
-}
-
-.randomizer:hover {
-  background-color: #d4d4d6;
+button:hover {
+  background-color: #4aca2a;
 }
 
 /**------------------------------------------

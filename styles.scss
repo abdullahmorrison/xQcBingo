@@ -13,6 +13,7 @@
         2.2 Contact
       3. COMPONENTS
         3.1 Chip
+        3.2 Buttons
       4. MEDIA QUERIES
       5. ANIMATIONS
 
@@ -187,24 +188,20 @@ header {
   /*Overlap chip over everything*/
   position: absolute;
 }
-.randomizer{
-  background-color: #ffffff;
-  border: solid rgb(83, 58, 58);
-  border-radius: 10px;
-  box-shadow: 3px 4px 2px rgb(17, 17, 17);
+/*****************3.2 Buttons********************/
+button{
+  background-color: #24ad2a;
+  color: white;
   cursor: pointer;
   padding: 5px;
   margin: 5px calc(50% - 60px);
   text-align: center;
   h3{
-    color: #002fff;
+    color: #ffffff;
   }
 }
-.randomizer:active{
-  box-shadow: 2px 3px 2px rgb(17, 17, 17);
-}
-.randomizer:hover{
-  background-color: #d4d4d6;
+button:hover{
+  background-color: #4aca2a;
 }
 /**------------------------------------------
 **            4. MEDIA QUERIES
