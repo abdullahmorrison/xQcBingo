@@ -13,9 +13,7 @@ $(".quadrant").click(function (e) {
         $(e.target).parent().prepend('<div class="chip">Chippy Chip</div>');
         if(checkWin(chipsInARow)){
             setTimeout(function(){ //so it shows the win before reseting
-                alert('BINGO!'); 
-                reset();
-                randomizeBoard()
+                displayModal();
             }, 
             100);
         }
@@ -23,9 +21,7 @@ $(".quadrant").click(function (e) {
         $(e.target).prepend('<div class="chip">Chippy Chip</div>');
         if(checkWin(chipsInARow)){
             setTimeout(function(){ //so it shows the win before reseting
-                alert('BINGO!'); 
-                reset();
-                randomizeBoard()
+                displayModal();
             }, 
             100);
         }
@@ -88,7 +84,7 @@ function checkWin(chipsInARow){
 }
 
 //*Removes all chips from the board
-function reset(){
+function resetBoard(){
     const quadrants = document.querySelectorAll(".quadrant");
     for(j = 0; j<quadrants.length; j++){
         if($(quadrants[j]).find('.chip').length > 0){
