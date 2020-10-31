@@ -14,7 +14,7 @@ This is a game where twitch viewers that watch twitch.tv/xQcOW can play Bingo.
 - [ ] clean up/test of code
 - [ ] Show the website to r/xqcow
 
-e Possiblities:
+### Future Possiblities:
 - Add drag and drop feature for chips
 - [x] Add a board randomizer
 - Add Twitch Login (I have difficulty integrating oauth into my code. Need help with it)
@@ -23,8 +23,10 @@ e Possiblities:
   - Users can create boards and upload them so that other viewers can play their board
   - Multiple users can play on the same board
     - Moderators can run a huge Bingo game where the winner can win a prize (ex: gifted sub)
+- Possibly convert this project to REACT
 - Set up SMTPJs for Contacts
 - [x] Add a website visitor count (Or adding analytics viewer)
+  
 ### Possible Issues
 ##### CSS issues:
 1. position absolute: for a nav element and the instruction panel I used 
