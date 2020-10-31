@@ -4,7 +4,7 @@ This is a game where twitch viewers that watch twitch.tv/xQcOW can play Bingo.
 ### Current Goals:
 - [x] Code the design made on adobe xd (in design folder)
 - [x] Deploy the website
-- [ ] Design a Bingo win popup
+- [x] Design a Bingo win popup
   - [ ] Possibly add a win animation
 - [x] Add Ko-fi link to contact page
 - [ ] Save the bingo progress through cookies
