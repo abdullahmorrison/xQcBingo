@@ -216,10 +216,10 @@ header .logo {
 
 .randomizer {
   background-color: #ffffff;
-  border: var(--b);
+  border: solid #533a3a;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 3px 3px #292929;
-          box-shadow: 2px 3px 3px #292929;
+  -webkit-box-shadow: 3px 4px 2px #111111;
+          box-shadow: 3px 4px 2px #111111;
   cursor: pointer;
   padding: 5px;
   margin: 5px calc(50% - 60px);
@@ -231,8 +231,8 @@ header .logo {
 }
 
 .randomizer:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  -webkit-box-shadow: 2px 3px 2px #111111;
+          box-shadow: 2px 3px 2px #111111;
 }
 
 .randomizer:hover {

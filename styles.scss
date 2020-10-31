@@ -89,7 +89,6 @@ header {
 **            2. PAGES
 **------------------------------------------*/
 /*****************2.1 Homepage********************/
-
 .instructions {
   background: white;
   border-radius: var(--b_radius);
@@ -190,9 +189,9 @@ header {
 }
 .randomizer{
   background-color: #ffffff;
-  border: var(--b);
+  border: solid rgb(83, 58, 58);
   border-radius: 10px;
-  box-shadow: 2px 3px 3px rgb(41, 41, 41);
+  box-shadow: 3px 4px 2px rgb(17, 17, 17);
   cursor: pointer;
   padding: 5px;
   margin: 5px calc(50% - 60px);
@@ -202,7 +201,7 @@ header {
   }
 }
 .randomizer:active{
-  box-shadow: none;
+  box-shadow: 2px 3px 2px rgb(17, 17, 17);
 }
 .randomizer:hover{
   background-color: #d4d4d6;
