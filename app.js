@@ -15,6 +15,7 @@ $(".quadrant").click(function (e) {
             setTimeout(function(){ //so it shows the win before reseting
                 alert('BINGO!'); 
                 reset();
+                randomizeBoard()
             }, 
             100);
         }
@@ -24,6 +25,7 @@ $(".quadrant").click(function (e) {
             setTimeout(function(){ //so it shows the win before reseting
                 alert('BINGO!'); 
                 reset();
+                randomizeBoard()
             }, 
             100);
         }
