@@ -11,20 +11,10 @@ $(".quadrant").click(function (e) {
     }else if($(e.target).parent().is($(".quadrant")) 
         && $(e.target).parent().find('.chip').length == 0){//adds chip from quadrant if you click a quadrant
         $(e.target).parent().prepend('<div class="chip">Chippy Chip</div>');
-        if(checkWin(chipsInARow)){
-            setTimeout(function(){ //so it shows the win before reseting
-                displayModal();
-            }, 
-            100);
-        }
+        checkWin(chipsInARow);
     }else{//adds chip from quadrant if you click an element in a quadrant
         $(e.target).prepend('<div class="chip">Chippy Chip</div>');
-        if(checkWin(chipsInARow)){
-            setTimeout(function(){ //so it shows the win before reseting
-                displayModal();
-            }, 
-            100);
-        }
+        checkWin(chipsInARow);
     }
 });
 
@@ -40,7 +30,10 @@ function checkWin(chipsInARow){
                 }
             }
             if(chips == chipsInARow){//checking for horizonal win
-                return true;
+                setTimeout(function(){ //so it shows the win before reseting
+                    displayModal();
+                }, 
+                100);
             }
         }
         chips = 0;
@@ -54,7 +47,10 @@ function checkWin(chipsInARow){
                 }
             }
             if(chips == chipsInARow){//checking for vertical win
-                return true;
+                setTimeout(function(){ //so it shows the win before reseting
+                    displayModal();
+                }, 
+                100);
             }
         }
         chips = 0;
@@ -67,7 +63,10 @@ function checkWin(chipsInARow){
             }
         } 
         if(chips == chipsInARow){//checking for diagonal win
-            return true;
+            setTimeout(function(){ //so it shows the win before reseting
+                displayModal();
+            }, 
+            100);
         }
     }else if($(quadrants[chipsInARow-1]).find('.chip').length > 0){//checking the top right corner
         //!WARNING this may cause future erros: quadrants.length-1 is done so you doesn't look at bottom right chip
@@ -77,7 +76,10 @@ function checkWin(chipsInARow){
             }
         }  
         if(chips == chipsInARow){//checking for diagonal win
-            return true;
+            setTimeout(function(){ //so it shows the win before reseting
+                displayModal();
+            }, 
+            100);
         }  
     }
     return false;
@@ -95,6 +97,7 @@ function resetBoard(){
 
 //*Randomize the board
 function randomizeBoard(){
+    resetBoard();// resets board so you can't get a bingo through randomizing the quadrants
     //Code taken from https://stackoverflow.com/questions/18483241/random-div-order-on-page-load
     var quadrants = $(".quadrant");
     for(var i = 0; i < quadrants.length; i++){
