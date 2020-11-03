@@ -28,14 +28,14 @@
   /*COLORS*/
   --mainColor: #3d3d3d;
   --secondaryColor: #dedede;
-  --tertiaryColor: purple;
+  --tertiaryColor: #ffffff;
 
   /*TEXT*/
   --mainText: #000000;
 
   /*BORDER*/
   --b: solid 2px #00000088;
-  --b_radius: 5px;
+  --b_radius: 10px;
 }
 /**------------------------------------------
 **            1. lAYOUTS
@@ -52,7 +52,6 @@ body {
   background-color: var(--mainColor);
 
   font-family: "Bebas Neue", cursive;
-  font-size: 100%;
 }
 a {
   text-decoration: none;
@@ -74,13 +73,10 @@ header {
     }
   }
   a:hover {
-    color: var(--tertiaryColor);
+    color: purple;
     h1 {
-      color: var(--tertiaryColor);
+      color: purple;
     }
-  }
-  img {
-    width: 5vw;
   }
   .logo{
     width: 65px;
@@ -90,24 +86,25 @@ header {
 **            2. PAGES
 **------------------------------------------*/
 /*****************2.1 Homepage********************/
+.game {
+  padding: 20px;
+  position: relative;
+}
+
 .instructions {
-  background: white;
+  background: var(--tertiaryColor);
   border-radius: var(--b_radius);
   padding: 20px;
   width: 25vw;
   margin: auto;
-  position: absolute;
+  position: absolute; /*relative to .game*/
   top: 70px;
   p{
     margin-bottom: 10px;
   }
 }
-.game {
-  padding: 20px;
-  position: relative;
-}
 .board {
-  background-color: white;
+  background-color: var(--tertiaryColor);
   border: var(--b);
   border-radius: var(--b_radius);
   display: grid;
@@ -118,18 +115,18 @@ header {
 .quadrant {
   border: var(--b);
   padding: 20px;
-  position: relative;
+  position: relative; /*to be able to add a chip*/
   text-align: center;
   img {
     width: 65px;
   }
 }
 .quadrant:hover {
-  background-color: #dedede;
+  background-color: var(--secondaryColor);
   cursor: pointer;
 }
 .credit{
-  background-color: #ffffff;
+  background-color: var(--tertiaryColor);
   border: var(--b);
   border-radius: 30px;
   margin: 10px auto;
