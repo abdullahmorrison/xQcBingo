@@ -118,7 +118,10 @@ header {
   position: relative; /*to be able to add a chip*/
   text-align: center;
   img {
-    width: 65px;
+    width: 65px; 
+  }
+  .xqcTake{
+    width: 100px;
   }
 }
 .quadrant:hover {

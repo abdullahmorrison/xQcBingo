@@ -134,6 +134,10 @@ header .logo {
   width: 65px;
 }
 
+.quadrant .xqcTake {
+  width: 100px;
+}
+
 .quadrant:hover {
   background-color: var(--secondaryColor);
   cursor: pointer;
