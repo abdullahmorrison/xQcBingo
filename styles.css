@@ -261,6 +261,9 @@ button:hover {
   .board img {
     width: 45px;
   }
+  .board .xqcTake {
+    width: 75px;
+  }
 }
 
 /**------------------------------------------
