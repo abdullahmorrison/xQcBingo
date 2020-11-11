@@ -21,7 +21,6 @@
         ------------------
       1. position absolute: for a nav element and the instruction panel I used 
       position abosulte. That may cause layout issues that I am not aware of.
-
 */
 
 :root {
@@ -95,10 +94,10 @@ header {
   background: var(--tertiaryColor);
   border-radius: var(--b_radius);
   padding: 20px;
-  width: 25vw;
+  width: 20vw;
   margin: auto;
   position: absolute; /*relative to .game*/
-  top: 70px;
+  top: 80px;
   p{
     margin-bottom: 10px;
   }
@@ -106,11 +105,10 @@ header {
 .board {
   background-color: var(--tertiaryColor);
   border: var(--b);
-  border-radius: var(--b_radius);
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(5, auto);
   margin: auto;
-  width: 33vw;
+  width: 45vw;
 }
 .quadrant {
   border: var(--b);
@@ -201,34 +199,50 @@ button:hover{
 /**------------------------------------------
 **            4. MEDIA QUERIES
 **------------------------------------------*/
-@media all and(max-width: 1340px){
-  .board{
-    width: 450px;
-  }
+@media all and(max-width: 1300px){
   .instructions{
     position: static;
-    width: 350px;
+    width: 70vw;
     margin: 10px auto;
+  }
+  .board{
+    width: 80vw;
   }
   .infoPanel{
     width: 80vw;
   }
 }
-@media all and(max-width: 500px){
+@media all and(max-width: 720px){
   .instructions{
     width: 80vw;
+  }
+  .quadrant {
+    padding: 0;
+    width: 17.5vw;
+  }
+  .chip {
+    width: 4em;
+    height: 4em;
+    
+    top: calc(50% - 2.5em);
+    left: calc(50% - 2.25em);
   }
   .board{
     width: 90vw;
     img{
       /* scaling the image down*/
-      -webkit-transform: scale(0.75); /* Saf3.1+, Chrome */
-     -moz-transform: scale(0.75); /* FF3.5+ */
-      -ms-transform: scale(0.75); /* IE9 */
-       -o-transform: scale(0.75); /* Opera 10.5+ */
-          transform: scale(0.75);
-             /* IE6–IE9 */
-             filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
+      -webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+      -moz-transform: scale(0.5); /* FF3.5+ */
+      -ms-transform: scale(0.5); /* IE9 */
+      -o-transform: scale(0.5); /* Opera 10.5+ */
+      transform: scale(0.5);
+      /* IE6–IE9 */
+      filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
+    }
+  }
+  @media all and(max-width: 600px){
+    .quadrant {
+      width: 17vw;
     }
   }
 } 
