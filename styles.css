@@ -71,7 +71,8 @@ header li {
 header li .rightLinks {
   position: absolute;
   left: 75%;
-  top: 25%;
+  top: 30%;
+  font-size: 0.9em;
 }
 
 header a:hover {
