@@ -26,6 +26,7 @@ $(".quadrant").click(function (e) {
 });
 
 function checkWin(chipsInARow) {
+
   var chips = 0;
   const quadrants = document.querySelectorAll(".quadrant");
   //*Check horizontal win
@@ -43,6 +44,7 @@ function checkWin(chipsInARow) {
         setTimeout(function () {
           //so it shows the win before reseting
           displayModal();
+          throwConfetti();
         }, 100);
       }
     }
@@ -63,6 +65,7 @@ function checkWin(chipsInARow) {
         setTimeout(function () {
           //so it shows the win before reseting
           displayModal();
+          throwConfetti();
         }, 100);
       }
     }
@@ -82,6 +85,7 @@ function checkWin(chipsInARow) {
       setTimeout(function () {
         //so it shows the win before reseting
         displayModal();
+        throwConfetti();
       }, 100);
     }
   } else if ($(quadrants[chipsInARow - 1]).find(".chip").length > 0) {
@@ -102,10 +106,18 @@ function checkWin(chipsInARow) {
       setTimeout(function () {
         //so it shows the win before reseting
         displayModal();
+        throwConfetti();
       }, 100);
     }
   }
   return false;
+}
+
+function throwConfetti(){
+  $("body").prepend('<div class="confetti"></div><div class="confetti"></div><div class="confetti"></div><div class="confetti"></div><div class="confetti"></div><div class="confetti"></div><div class="confetti"></div><div class="confetti"></div><div class="confetti"></div><div class="confetti"></div>');
+}
+function stopConfetti(){
+  $("body").find(".confetti").remove();
 }
 
 //*Removes all chips from the board
