@@ -12,7 +12,7 @@ This is a game where twitch viewers that watch twitch.tv/xQcOW can play Bingo.
 - [ ] Refactor the CSS
   - [ ] Allow for scalabilty for different displays
 - [ ] Add BEM organization
-- [x] clean up/test of code
+- [ ] clean app.js code
 - [x] Show the website to r/xqcow
 
 ### Future Possiblities:
