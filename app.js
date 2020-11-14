@@ -90,7 +90,6 @@ function checkWin(chipsInARow) {
     }
   } else if ($(quadrants[chipsInARow - 1]).find(".chip").length > 0) {
     //checking the top right corner
-    //!WARNING this may cause future erros: quadrants.length-1 is done so you doesn't look at bottom right chip
     for (
       j = chipsInARow - 1;
       j < quadrants.length - 1;
@@ -113,9 +112,11 @@ function checkWin(chipsInARow) {
   return false;
 }
 
+//*Starts confetti animation
 function throwConfetti(){
   $("body").prepend('<div class="confetti"></div><div class="confetti"></div><div class="confetti"></div><div class="confetti"></div><div class="confetti"></div><div class="confetti"></div><div class="confetti"></div><div class="confetti"></div><div class="confetti"></div><div class="confetti"></div>');
 }
+//*Ends confetti animation
 function stopConfetti(){
   $("body").find(".confetti").remove();
 }
@@ -130,7 +131,7 @@ function resetBoard() {
   }
 }
 
-//*Randomize the board
+//*Randomize the quadrant ordering of the board
 function randomizeBoard() {
   resetBoard(); // resets board so you can't get a bingo through randomizing the quadrants
   //Code taken from https://stackoverflow.com/questions/18483241/random-div-order-on-page-load
